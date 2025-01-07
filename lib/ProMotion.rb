@@ -5,6 +5,7 @@ end
 require 'motion_print'
 
 Motion::Project::App.setup do |app|
+  app.files.flatten!
   core_lib = File.join(File.dirname(__FILE__), 'ProMotion')
   insert_point = app.files.find_index { |file| file =~ /^(?:\.\/)?app\// } || 0
 
