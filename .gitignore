@@ -24,6 +24,7 @@ tmp
 .DS_Store
 .dat*
 .rake_tasks*
+build-log
 
 # IDE / editor files
 .idea/
