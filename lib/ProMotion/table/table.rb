@@ -51,6 +51,7 @@ module ProMotion
     end
 
     def setup_search_method
+      return nil unless self.class.respond_to?(:get_searchable_params)
       params = self.class.get_searchable_params
       if params.nil?
         return nil
